@@ -1,0 +1,76 @@
+.jumbotron{
+                background-image: url('../img/Santo1.jpg');
+                background-attachment: fixed;
+                min-height: 400px;
+                width: 100%;
+                background-size: 100% 100%;
+                color: white;
+                margin-bottom: 0px;
+
+          }
+          .jumbotron h1{
+            margin-top: 250px;
+          }
+          html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.space{
+  height: 50px;
+}
+.space2{
+  margin-top:300px;
+}
+.teste{
+
+  background-color: rgba(255,255,255,.5);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 71px 100%);
+  clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+}
+.dizeres{
+  width:100%;
+  background:rgba(255, 255, 255,0.40);
+
+  margin-top:26em;
+  
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 65px 100%);
+clip-path: polygon(0 0, 100% 0%, 100% 100%, 65% 100%);
+padding-top:12px;
+padding-right:20px;
+
+}
+#dizer{
+font-family: Mistral;
+
+  color: #75B83F;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+  padding-left:1em;
+  margin:0;
+  font-size: 45px;
+}
+#dizer2{
+font-family: Mistral;
+
+  color: #75B83F;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+  padding-left:2em;
+  padding-right: 2em;
+  margin:0;
+  font-size: 25px; 
+}
+#dizer4{
+font-family: Mistral;
+
+  color: #75B83F;
+  text-shadow: 1px 1px 1px rgba(0,0,0,.75);
+  padding-left:1.5em;
+  margin:0;
+  font-size: 35px;
+}
+.logo_ilha{ 
+min-width:80px;
+margin-right: 0px;
+}
+ div#google_translate_element div.goog-te-gadget-simple{background-color: transparent;border: transparent; }
+ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color: white; }

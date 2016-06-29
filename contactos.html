@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="Prime Consulting" content="">
+    <link rel="icon" href="img/logo.ico">
+
+    <title>Contactos - Residencial Nova Cidade</title>
+
+    <script>
+      function initMap() {
+          var myLatLng = {lat: 17.018440, lng: -25.057637};
+          var mapDiv = document.getElementById('map');
+          var map = new google.maps.Map(mapDiv, {
+              center: myLatLng,
+              zoom: 17
+          });
+          var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              icon: iconBase + 'schools_maps.png'
+          });
+          var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Residencial Nova Cidade'
+          });
+          var infowindow = new google.maps.InfoWindow({
+              content:"Residencial Nova Cidade"
+          });
+          infowindow.open(map,marker);
+      }
+
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+         includedLanguages: 'ca,da,de,el,en,es,fr,ip,ja,ko,nl,pl,pt,ru,sv,tl',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyA9jLsorbF1d-5bQIo2cVHC8NmJmHL1FF4" async defer></script>
+
+    <style>
+      #map {
+        width: 600px;
+        height: 450px;
+      }
+    </style>
+     <style type="text/css">
+/* to hide the toolbar and tooltip - START */  
+ div#google_translate_element div.goog-te-gadget-simple{background-color: transparent;border: transparent; }
+ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color: white; }
+/* to hide the toolbar and tooltip - END */  
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+.space{
+  height: 50px;
+}
+ </style>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <header>
+        
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2 ">
+                  <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Hotel Santiago" style="cursor: pointer;min-width:50px"></a>
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10 pull-right" >
+                <div class="row">
+                  <div class="space visible-lg"></div>
+                </div>
+                <div >
+                  <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Nova Cidade</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="satisfacao.html">Satisfação</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li class="active"><a href="contactos.html">Contactos</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right" style="padding-right:40px; display: inline-flex !important; margin-right:180px;">
+                     <li><div id="google_translate_element" style="padding-top: 13px; padding-right: 10px; padding-left: 10px"></div></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+                </div>
+                
+                  
+               </div>
+            </div>
+            
+
+          </div>
+        </div>
+    </header>
+
+    <div class="container">
+      <br>
+      <hr>
+      <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+              <div class="titulo">
+                 <h3>Contacto</h3>
+              </div>
+                <address>
+                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span> <strong  style="font-family: sans-serif">Alto Peixinho,Porto Novo</strong><br>
+                  <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email.:<a href="rrnovacidade@sapo.cv" style="font-family: sans-serif">rrnovacidade@sapo.cv</a><br>
+                  <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <abbr title="Fax" style="font-family: sans-serif">Telef.:</abbr> + 238 222 1882<br>
+                  <span class="glyphicon glyphicon-print" aria-hidden="true"></span> <abbr title="Fax" style="font-family: sans-serif">Fax.:</abbr> + 264 61 28 60<br>
+                  <span class="glyphicon glyphicon-phone" aria-hidden="true"></span> <abbr title="Movel" style="font-family: sans-serif">Mov.:</abbr> +238 978 7463 / 998 2407 / 970 9234
+                </address>
+                <form action="enviar_contacto.php" name="contacto" method="post" autocomplete="off" role="form">
+                  <div class="form-group ">
+                      <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" required="required">
+                      <br>
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+                      <br>
+                      <textarea class="form-control" id="mensagem" name="mensagem" rows="6" placeholder="Mensagem" required="required"></textarea>
+                 </div>
+                    <button  type="submit" class="btn btn-primary" >Enviar</button>
+                </form>
+                
+            </div>
+            <br>
+            <div class="col-md-7 col-sm-7 img-responsive pull-right" id="map" style="margin-right:16px;"></div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <hr class="featurette-divider">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; eTourism Project by <b>Prime Consulting</b> &middot; <a href="#">Termos</a> &middot; <a href="#">Privacidade</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>

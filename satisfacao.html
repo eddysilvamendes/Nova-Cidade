@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="description" content="">
+    <meta name="Prime Consulting" content="">
+    <link rel="icon" href="img/logo.ico">
+
+    <title>Residencial Nova Cidade</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <script src="js/star/jquery.form.js"></script>
+     <script src="js/star/jquery.js"></script>
+     <script src="js/star/jquery.MetaData.js"></script>
+     <script src="js/star/jquery.rating.js"></script>
+     <script src="js/star/jquery.rating.pack.js"></script>
+     <link href="css/jquery.rating.css" rel="stylesheet">   
+
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+         includedLanguages: 'ca,da,de,el,en,es,fr,ip,ja,ko,nl,pl,pt,ru,sv,tl',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+     <style type="text/css">
+/* to hide the toolbar and tooltip - START */  
+ div#google_translate_element div.goog-te-gadget-simple{background-color: transparent;border: transparent; }
+ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color: white; }
+/* to hide the toolbar and tooltip - END */  
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.space{
+  height: 50px;
+}
+ </style>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <header>
+       
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2 ">
+                  <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Hotel Santiago" style="cursor: pointer;min-width:50px"></a>
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10 pull-right" >
+                <div class="row">
+                  <div class="space visible-lg"></div>
+                </div>
+                <div >
+                  <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Nova Cidade</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li class="active"><a href="satisfacao.html">Satisfação</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right" style="padding-right:40px; display: inline-flex !important; margin-right:180px;">
+                     <li><div id="google_translate_element" style="padding-top: 13px; padding-right: 10px; padding-left: 10px"></div></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+                </div>
+                
+                  
+               </div>
+            </div>
+            
+
+          </div>
+        </div>
+    </header>
+
+    <div class="container">
+      <br>
+      <hr>
+
+        <div class="row">
+            <div class="col-md-12">
+              <div class="titulo">
+                <h3>Satisfação</h3>
+              </div>
+
+                <p>Caro (a) H&oacute;spede,<br><br>Para a Residencial Nova Cidade, o conforto, seguran&ccedil;a e qualidade da sua estada entre n&oacute;s &eacute;, para n&oacute;s, de extrema import&acirc;ncia.<br><br>&Eacute; nossa firme convic&ccedil;&atilde;o que a sua opini&atilde;o e avalia&ccedil;&atilde;o contribuir&atilde;o para a melhoria cont&iacute;nua dos nossos servi&ccedil;os.<br><br></p>
+
+                <form action="enviar_email.php" name="satisfacao" method="post" autocomplete="off" role="form">
+                  <h3>Dados Pessoais</h3>
+                  <hr>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="nome" class="col-sm-2 control-label" style="text-align: left">Nome <span style="color: #CC0000">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome" required="required">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="num_quarto" class="col-sm-2 control-label" style="text-align: left">N&ordm; Quarto <span style="color: #CC0000">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="num_quarto" placeholder="Numero do Quarto" required="required">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="nacionalidade" class="col-sm-2 control-label" style="text-align: left">Nacionalidade <span style="color: #CC0000">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control" name="nacionalidade" placeholder="Nacionalidade" required="required">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-2 control-label" style="text-align: left">Email <span style="color: #CC0000">*</span></label>
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                        </div>
+                    </div>
+                  </div>
+                  <br>
+                  <p class="text-muted"><b>Como conheceu esta unidade?</b></p>
+                  <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="conhecimento" value="amigos_parentes" required="required"> Por indica&ccedil;&atilde;o de Amigos e Parentes
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="conhecimento" value="publicidade"> Publicidade
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="conhecimento" value="motor_de_busca"> Motor de Busca <span style="color: #CC0000">*</span>
+                        </label>
+                  </div>
+                  <br>
+                  <p class="text-muted"><b>Qual foi o motivo da sua estadia?</b></p>
+                  <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="motivo" value="ferias" required="required"> F&eacute;rias/Lazer
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="motivo" value="negocios"> Neg&oacute;cios
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="motivo" value="outro"> Outro <span style="color: #CC0000">*</span>
+                        </label>
+                  </div>
+                  <br>
+
+                  <h3>Como avalia os seguintes itens</h3>
+                  <hr>
+
+                  <div class="form-group">
+                        <p class="text-muted"><b>Atendimento no momento da Reserva</b></p>
+                        <input name="reserva" type="radio" class="star" value="1" />
+                        <input name="reserva" type="radio" class="star" value="2" />
+                        <input name="reserva" type="radio" class="star" value="3" />
+                        <input name="reserva" type="radio" class="star" value="4" />
+                        <input name="reserva" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Atendimento ao Balc&atilde;o/Recep&ccedil;&atilde;o</b></p>
+                        <input name="recepcao" type="radio" class="star" value="1" />
+                        <input name="recepcao" type="radio" class="star" value="2" />
+                        <input name="recepcao" type="radio" class="star" value="3" />
+                        <input name="recepcao" type="radio" class="star" value="4" />
+                        <input name="recepcao" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Simpatia dos funcion&aacute;rios</b></p>
+                        <input name="simpatia" type="radio" class="star" value="1" />
+                        <input name="simpatia" type="radio" class="star" value="2" />
+                        <input name="simpatia" type="radio" class="star" value="3" />
+                        <input name="simpatia" type="radio" class="star" value="4" />
+                        <input name="simpatia" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Servi&ccedil;o de &ldquo;Check-In&rdquo;</b></p>
+                        <input name="check_in" type="radio" class="star" value="1" />
+                        <input name="check_in" type="radio" class="star" value="2" />
+                        <input name="check_in" type="radio" class="star" value="3" />
+                        <input name="check_in" type="radio" class="star" value="4" />
+                        <input name="check_in" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Servi&ccedil;o de &ldquo;Check-Out&rdquo;</b></p>
+                        <input name="check_out" type="radio" class="star" value="1" />
+                        <input name="check_out" type="radio" class="star" value="2" />
+                        <input name="check_out" type="radio" class="star" value="3" />
+                        <input name="check_out" type="radio" class="star" value="4" />
+                        <input name="check_out" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Seguran&ccedil;a</b></p>
+                        <input name="seguranca" type="radio" class="star" value="1" />
+                        <input name="seguranca" type="radio" class="star" value="2" />
+                        <input name="seguranca" type="radio" class="star" value="3" />
+                        <input name="seguranca" type="radio" class="star" value="4" />
+                        <input name="seguranca" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Comforto e Limpeza dos Quartos</b></p>
+                        <input name="limpeza" type="radio" class="star" value="1" />
+                        <input name="limpeza" type="radio" class="star" value="2" />
+                        <input name="limpeza" type="radio" class="star" value="3" />
+                        <input name="limpeza" type="radio" class="star" value="4" />
+                        <input name="limpeza" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Servi&ccedil;o de Pequeno-Almo&ccedil;o</b></p>
+                        <input name="peq_almoco" type="radio" class="star" value="1" />
+                        <input name="peq_almoco" type="radio" class="star" value="2" />
+                        <input name="peq_almoco" type="radio" class="star" value="3" />
+                        <input name="peq_almoco" type="radio" class="star" value="4" />
+                        <input name="peq_almoco" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Envolvente externo ao empreendimento</b></p>
+                        <input name="empreend" type="radio" class="star" value="1" />
+                        <input name="empreend" type="radio" class="star" value="2" />
+                        <input name="empreend" type="radio" class="star" value="3" />
+                        <input name="empreend" type="radio" class="star" value="4" />
+                        <input name="empreend" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Servi&ccedil;o de Internet</b></p>
+                        <input name="internet" type="radio" class="star" value="1" />
+                        <input name="internet" type="radio" class="star" value="2" />
+                        <input name="internet" type="radio" class="star" value="3" />
+                        <input name="internet" type="radio" class="star" value="4" />
+                        <input name="internet" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Acessibilidade ao empreendimento</b></p>
+                        <input name="access_emp" type="radio" class="star" value="1" />
+                        <input name="access_emp" type="radio" class="star" value="2" />
+                        <input name="access_emp" type="radio" class="star" value="3" />
+                        <input name="access_emp" type="radio" class="star" value="4" />
+                        <input name="access_emp" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                        <p class="text-muted"><b>Acessibilidade &agrave; Ilha</b></p>
+                        <input name="access_ilha" type="radio" class="star" value="1" />
+                        <input name="access_ilha" type="radio" class="star" value="2" />
+                        <input name="access_ilha" type="radio" class="star" value="3" />
+                        <input name="access_ilha" type="radio" class="star" value="4" />
+                        <input name="access_ilha" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+
+                  <h3>De modo geral, como classifica a sua estadia no empreendimento?</h3>
+                  <hr>
+                  <div class="form-group">
+                        <input name="estadia" type="radio" class="star" value="1" />
+                        <input name="estadia" type="radio" class="star" value="2" />
+                        <input name="estadia" type="radio" class="star" value="3" />
+                        <input name="estadia" type="radio" class="star" value="4" />
+                        <input name="estadia" type="radio" class="star" value="5" />
+                    <br>
+                  </div>
+                  <div class="form-group">
+                    <label for="comentarios">Coment&aacute;rios</label>
+                    <div>
+                        <textarea class="form-control" name="comentarios" rows="4" placeholder="Coment&aacute;rios..."></textarea>
+                    </div>
+                  </div>
+                  <br>
+
+                  <button type="submit" name="submit" class="btn btn-primary">Enviar</button>
+                  <br>
+                </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer>
+            <hr class="featurette-divider">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; eTourism Project by <b>Prime Consulting</b> &middot; <a href="#">Termos</a> &middot; <a href="#">Privacidade</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+  </body>
+</html>

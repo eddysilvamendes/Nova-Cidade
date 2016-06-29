@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="Prime Consulting" content="">
+    <link rel="icon" href="img/logo.ico">
+
+    <title>Residencial Nova Cidade</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt',
+         includedLanguages: 'ca,da,de,el,en,es,fr,ip,ja,ko,nl,pl,pt,ru,sv,tl',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    </script>
+     <style type="text/css">
+/* to hide the toolbar and tooltip - START */  
+ div#google_translate_element div.goog-te-gadget-simple{background-color: transparent;border: transparent; }
+ div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{color: white; }
+/* to hide the toolbar and tooltip - END */  
+ html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.space{
+  height: 50px;
+}
+ </style>
+
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+    <header>
+        
+        <div class="navbar-wrapper">
+          <div class="container">
+            <div class="row">
+               <div class="col-md-2 col-sm-2 col-xs-2 ">
+                  <a href="index.html"><img class="img-responsive" src="img/logo.png" alt="Hotel Santiago" style="cursor: pointer;min-width:50px"></a>
+               </div>
+               <div class="col-md-10 col-sm-10 col-xs-10 pull-right" >
+                <div class="row">
+                  <div class="space visible-lg"></div>
+                </div>
+                <div >
+                  <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">Nova Cidade</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                  <ul class="nav navbar-nav">
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="satisfacao.html">Satisfação</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li class="active"><a href="reservas.html">Reservas</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right" style="padding-right:40px; display: inline-flex !important; margin-right:180px;">
+                     <li><div id="google_translate_element" style="padding-top: 13px; padding-right: 10px; padding-left: 10px"></div></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+                </div>
+                
+                  
+               </div>
+            </div>
+            
+
+          </div>
+        </div>
+    </header>
+
+    <div class="container">
+      <br>
+      <hr>
+        <div class="row">
+          <div class="titulo">
+            <h3 >Reserva</h3>
+            <p>*Campos de preenchimento obrigat&oacute;rio.</p>
+          </div>
+          <form action="enviar_reserva.php" name="reserva" method="post" autocomplete="off" role="form">
+            <div class="col-md-6" >
+              <div class="mycontent-left">
+                <h4 >Dados Pessoais</h4>
+                <div class="form-group ">
+                  <label for="nome">Nome<span style="color: #CC0000">*</span></label>
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Name" required="required">
+                  <label for="apelido">Apelido<span style="color: #CC0000">*</span></label>
+                    <input type="apelido" class="form-control" id="surname" name="surmane" placeholder="Apelido" required="required">
+                  <label for="email">Email<span style="color: #CC0000">*</span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="required">
+                  <label for="num_doc" >N&ordm; de documento<span style="color: #CC0000">*</span></label>
+                    <input type="text" class="form-control" id="num_doc" name="num_doc" placeholder="Numero do Documento" required="required">
+                      <p class="help-block">Pode indicar o n&ordm; de BI ou de Passaporte</p>
+                  <label for="telefone">Telefone<span style="color: #CC0000">*</span></label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="Telefone" required="required">
+                  <label for="endereco">Endere&ccedil;o<span style="color: #CC0000">*</span></label>
+                    <input type="text" class="form-control" id="address" name="address" placeholder="Endere&ccedil;o" required="required">
+                  <label for="nacionalidade">Ncionalidade</label>
+                    <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Nacionalidade">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" >
+              <div class="mycontent-right">
+                <h4 >Informaçoes da reserva</h4>
+                <div class="form-group ">
+                  <div class="form-group ">
+                        <label for="data_chegada">Data Chegada<span style="color: #CC0000">*</span></label>
+                        <input type="date" class="form-control" id="arivel_date" name="arivel_date" placeholder="Data Chegada" required="required">
+                        <label for="data_partida">Data Partida<span style="color: #CC0000">*</span></label>
+                        <input type="date" class="form-control" id="departure_date" name="departure_date" placeholder="Data Partida" required="required">
+                        <label for="quartos">Quartos<span style="color: #CC0000">*</span></label>
+                        <select class="form-control" id="roons" name="roons" required="required">
+                          <option disabled selected value> Selecione uma op&ccedil;&atilde;o </option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                        </select>
+                        <label for="adultos" >Adultos<span style="color: #CC0000">*</span></label>
+                        <select class="form-control" id="adults" name="adults" required="required">
+                          <option disabled selected value> Selecione uma op&ccedil;&atilde;o </option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                          <option>7</option>
+                          <option>8</option>
+                          <option>9</option>
+                          <option>10</option>
+                        </select>
+                        <label for="pais_origem">Pais de Origem</label>
+                          <input type="text" class="form-control" id="origin_country" name="origin_country" placeholder="Pais de Origem">
+                        <label for="motivo">Motivo Viagem</label>
+                          <input type="text" class="form-control" id="travel_motive" name="travel_motive" placeholder="Motivo Viagem">
+                        <label for="info">Informa&ccedil;&otilde;es adicionais</label>
+                          <textarea class="form-control" id="info" name="info" rows="6" placeholder="Informa&ccedil;&otilde;es adicionais..."></textarea>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div >
+              <button type="submit" class="btn btn-primary" >Reservar</button>
+           </div>
+          </form>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            <hr class="featurette-divider">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; eTourism Project by <b>Prime Consulting</b> &middot; <a href="#">Termos</a> &middot; <a href="#">Privacidade</a></p>
+        </footer>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+</html>
